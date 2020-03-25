@@ -5,14 +5,27 @@
 
   {% include sidebar.html %}
 
-  <main role="main">
+<!--   <main role="main">
     <div class="content">
       {{content}}
     </div>
-  </main>
+  </main> -->
   
-  <div class="col-sm-3" style="margin-left:80%">
-    <div class="shadow-corner-curl hidden-xs vertical-center">
+
+  
+  <div class="row">
+  <div id="myArticle" class="col-sm-9">
+    <div class="post-area post">
+      <article>
+        {{content}}
+      </article>
+    </div>
+  </div>
+</div>
+<p><br/></p>
+
+  <div class="col-sm-3">
+    <div class="shadow-corner-curl hidden-xs">
       <div class="categories-list-header">
         Categories
       </div>
@@ -27,6 +40,7 @@
       {% endfor %}
     </div>
   </div>
+</div>
   
   
 {% include analytics.html %}
